@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Notice Board</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-bullhorn"></i>
+            <span>Community Board</span>
+        </div>
+        <div class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html" class="btn-login" id="loginBtn">Admin Login</a>
+            <a href="#" class="btn-logout" id="logoutBtn" style="display: none;">Logout</a>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>Welcome to Community Notice Board</h1>
+        <p>Stay updated with the latest community events and announcements</p>
+        <a href="post.html" class="btn-post" id="postNoticeBtn" style="display: none;">Post a Notice</a>
+    </header>
+
+    <!-- Search and Filter Section -->
+    <section class="search-filter">
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search notices...">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+        <div class="filter-options">
+            <select id="categoryFilter">
+                <option value="all">All Categories</option>
+                <option value="events">Events</option>
+                <option value="donations">Donations</option>
+                <option value="lost-found">Lost & Found</option>
+                <option value="updates">Community Updates</option>
+            </select>
+        </div>
+    </section>
+
+    <!-- Notices Section -->
+    <main class="notices-container" id="noticesContainer">
+        <!-- Notices will be dynamically loaded here -->
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-envelope"></i> rebirthindia15@gmail.com</p>
+                <p><i class="fas fa-phone"></i>  (0120) 437-52-21</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/rebirthindia2015"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/p/CZneNO0KVAB/?igshid=MDJmNzVkMjY%3D&img_index=1"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/p/CZneNO0KVAB/?igshid=MDJmNzVkMjY%3D&img_index=1"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Community Notice Board. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="auth.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
